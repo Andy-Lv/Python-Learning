@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            // 使用标签选择器选择标签
+            // $("div").css({'color':'blue'})
+            
+            // has在选择器中进行筛选有子标签为 p,最终是 div 标签
+            // $('div').has('p').css({'color': "red"});
+            
+            // eq() 下标,下标从 0 开始的
+            // $('div').eq(0).css({'color':'red'});
+            
+            
+
+        });
+    </script>
+</head>
+<body>
+    <div>
+        这是第一个 div.
+        天天向上
+    </div>
+
+    <div>
+        这是第二个 div. 
+        <p>好好学习. </p>
+    </div>
+
+    <div>
+        这是第三个 div. 
+        天天向上
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: purple;
+        }
+    </style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        // 阻止事件冒泡
+        // $(function() { 
+        //     $("div").click(function(event) { 
+        //         event.stopPropagation(); 
+        //     }); 
+        // }); 
+
+    </script>
+    <script>
+        // 事件冒泡,子标签的事件,会向父级标签进行传递
+        // $(function(){
+        //     $('div').click(function(){
+        //         alert($(this).html());
+        //     });
+        // });
+        
+        
+    </script>
+
+</head>
+<body>
+    <div class="box1">
+        我是 div1 标签
+        
+        <div class="box2">
+            我是 div2 标签
+        </div>
+
+    </div>
+</body>
+</html>

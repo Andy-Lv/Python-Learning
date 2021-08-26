@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 定义一个 json 字符串
+        var sStr = '{"name": "小明", "age": 18, "like": ["学习", "音乐"]}';
+        console.log(typeof(sStr), sStr);
+
+        // 将 json 字符串,转化为 JS 对象
+        var oObj = JSON.parse(sStr);
+        console.log(typeof(oObj), oObj);
+        // 获取 name 属性和 age 属性
+        console.log(oObj.name, oObj.age);
+
+        // 将 JS 对象转化为 json 字符串
+        var sStu = JSON.stringify(oObj);
+        console.log(typeof(sStu), sStu);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

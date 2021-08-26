@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            // 对所有的 li 标签进行绑定click 事件, 循环绑定的,
+            // $('li').click(function(){
+            //     $(this).css({'background': 'red'});
+            // });
+
+            // 事件代理,设置标签,只绑定一次 delegate('li', 'click', function()
+            $('ul').delegate('li', 'click', function(){
+                $(this).css({'background': 'red'});
+            });
+
+            // 将来工作中的标签,可能是通过代码添加的,代码添加的 li 标签没有绑定
+            $('ul').append('<li>标签4</li>');
+            $('ul').append('<li>标签5</li>');
+        });
+
+    </script>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>标签1</li>
+            <li>标签2</li>
+            <li>标签3</li>
+        </ul>
+    </div>
+</body>
+</html>

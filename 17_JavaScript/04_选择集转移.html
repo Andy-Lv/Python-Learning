@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            // 使用类选择器,选择文字 3 这个标签
+            // $Li = $(".class_3");
+            
+            // 选择集转移,选择这个标签前一个标签 prev()
+            // $Li.prev().css({"color":"blue"});
+            
+            // 选择集转移,选择这个标签前边所有的标签 prevAll()
+            // $Li.prevAll().css({"color":"blue"});
+            
+            // // 选择集转移,选择这个标签后边一个标签 next()
+            // $Li.next().css({"color":"red"});
+            
+            // 选择集转移,选择这个标签后边所有的标签 nextAll()
+            // $Li.nextAll().css({"color":"blue"});
+            
+            // 选择集转移, 选择兄弟.和他同一级别的其他标签 siblings()
+            // $Li.siblings().css({"color":"blue"});
+            
+            // 选择父标签, parent()
+            // $Li.parent().css({'background':'green'});
+            
+            // 孩子标签,自己的内容不会发生改变 children()
+            // $("ul").children().css({'background':'red'});
+
+            // find() 在子标签中查找满足,最终使用的是子标签 find()
+            // $("#id_div").find(".class_p").css({"color":"red"});
+            
+            
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>文字1</li>
+        <li>文字2</li>
+        <li class="class_3">文字3</li>
+        <li>文字4</li>
+        <li id="id_5">文字5</li>
+        <li>文字6</li>
+        <li>文字7</li>
+        <li>文字8</li>
+    </ul>
+
+    <br><hr>
+
+    <div id="id_div">
+        这是一个 div 
+        <p>好好学学习</p>
+        <p class="class_p"> 天天向上</p>
+        <p>good good study</p>
+        这是一个 div 
+
+    </div>
+
+</body>
+</html>
